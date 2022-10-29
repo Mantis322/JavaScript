@@ -96,7 +96,7 @@ const categories = menu.reduce((values, item) => {
 const categoryList = () => {
   let buttonList = categories.map(item => {
     return `<button class="btn btn-outline-dark btn-item" data-id=${item}>${item}</button>`
-  }).join()
+  }).join("")
 
   btnContainer.innerHTML = buttonList
   let filterButtons = document.querySelectorAll(".btn-item")
